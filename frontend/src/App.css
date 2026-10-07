@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card,
+.dashboard-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1769aa;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.pregnancy-icon {
+  text-align: center;
+  font-size: 48px;
+  margin: 10px 0 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1769aa;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button {
+  background: #1769aa;
+  color: white;
+  margin-top: 4px;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message,
+.error-message {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.success-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.language {
+  text-align: center;
+  margin-top: 24px;
+  color: #555;
+}
+
+.worker-label {
+  text-align: center;
+  color: #1769aa;
+  font-weight: bold;
+}
+
+.welcome-box {
+  background: #f4f7f9;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.welcome-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primary-button {
+  background: #1769aa;
+  color: white;
+}
+
+.secondary-button {
+  background: #e8eef3;
+  color: #1769aa;
+}
+
+.logout-button {
+  width: 100%;
+  margin-top: 20px;
+  background: #eee;
+  color: #333;
+}

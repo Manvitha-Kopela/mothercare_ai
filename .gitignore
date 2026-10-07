@@ -1,0 +1,82 @@
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# Python / FastAPI
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+ENV/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# =========================
+# Node / React / Vite
+# =========================
+
+node_modules/
+dist/
+.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# =========================
+# IDE / Editors
+# =========================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+
+# =========================
+# Build / Coverage
+# =========================
+
+coverage/
+*.coverage
+
+
+# =========================
+# Local database / temporary files
+# =========================
+
+*.sqlite
+*.sqlite3
+*.db
