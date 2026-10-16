@@ -7,6 +7,9 @@ from app.models.health_worker import HealthWorker
 from app.routes.health_workers import router as health_worker_router
 from app.routes.auth import router as auth_router
 from app.models.pregnant_woman import PregnantWoman
+from app.routes.pregnant_women import router as pregnant_woman_router
+from app.routes import screening
+from app.routes import ml_prediction
 app = FastAPI(
     title="MotherCareAI API",
     description="Maternal Health Decision Support System",
@@ -29,6 +32,9 @@ app.add_middleware(
 # Register API routes
 app.include_router(health_worker_router)
 app.include_router(auth_router)
+app.include_router(pregnant_woman_router)
+app.include_router(screening.router)
+app.include_router(ml_prediction.router)
 
 @app.get("/")
 def root():

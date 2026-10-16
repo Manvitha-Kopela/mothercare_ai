@@ -1,0 +1,68 @@
+MotherCareAI - Experimental ML Evaluation Summary
+
+Dataset:
+UCI Maternal Health Risk dataset
+
+Data preparation:
+- Missing rows removed.
+- Exact duplicate rows removed.
+- Records with HeartRate <= 30 excluded.
+- Final dataset size after cleaning: 451 records.
+
+Test setup:
+- Stratified 80/20 train-test split.
+- Random state: 42.
+- Test set: 91 records.
+
+Classification results:
+- Accuracy: 0.60
+- Macro F1-score: 0.58
+- Low-risk F1-score: 0.67
+- Mid-risk F1-score: 0.32
+- High-risk F1-score: 0.74
+
+Probability diagnostic:
+- Multiclass log loss: 0.868
+- Calibration bins varied across classes.
+- Probability reliability has not been established.
+
+Limitations:
+- Dataset has no patient identifiers.
+- Repeated feature combinations and conflicting labels exist.
+- Evaluation does not establish independence between people.
+- The heart-rate cleaning rule requires justification.
+- The model has not undergone clinical validation.
+- Results must not be used to make patient-care decisions.
+
+Conclusion:
+This is an academic research prototype evaluated on a public
+dataset. Results are preliminary and do not establish clinical
+validity, safety, or suitability for real-world maternal care.
+## Machine Learning Methodology
+
+### 1. Dataset
+
+The project uses the UCI Maternal Health Risk dataset, which contains maternal health measurements and corresponding risk-level labels: Low Risk, Mid Risk, and High Risk.
+
+### 2. Data Preprocessing
+
+The dataset was prepared for model development using the following steps:
+
+- Removed rows containing missing values.
+- Removed exact duplicate rows.
+- Excluded records with heart rate values of 30 beats per minute or below. This was an exploratory data-cleaning decision and requires further justification.
+- Selected six input features: Age, Systolic Blood Pressure, Diastolic Blood Pressure, Blood Sugar, Body Temperature, and Heart Rate.
+
+After preprocessing, 451 records remained.
+
+### 3. Model Development
+
+Two classification approaches were compared: Logistic Regression and Random Forest. Model selection used stratified cross-validation and macro F1-score. Random Forest achieved the higher average cross-validation macro F1-score in the reported experiment and was selected for the prototype.
+
+### 4. Evaluation
+
+The reported evaluation used a stratified 80:20 train-test split with random state 42. The results were approximately 60% accuracy and 0.58 macro F1-score. Performance differed across the three risk classes, with Mid Risk classification performing less effectively than Low Risk and High Risk classification.
+
+### 5. Limitations
+
+The results are preliminary. The dataset does not provide patient identifiers, and repeated feature combinations and conflicting labels are present. The evaluation procedure does not establish that the saved model was tested on a fully independent dataset. The model has not undergone clinical validation and is intended for academic research only, not for diagnosis, referral decisions, or real-world patient care.

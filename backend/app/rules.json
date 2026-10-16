@@ -1,0 +1,20 @@
+{
+  "_status": "PLACEHOLDER - NOT CLINICALLY REVIEWED. Replace tiers and signs with the list a clinician signs off against MoHFW/WHO guidance. Do not use with real patients until reviewed is true.",
+  "reviewed": false,
+  "reviewed_by": null,
+  "source_documents": [],
+  "version": "0.0.1-draft",
+  "rules": [
+    {"id": "R01", "sign": "vaginal_bleeding",        "tier": "HIGH", "label_en": "Vaginal bleeding",              "label_te": ""},
+    {"id": "R02", "sign": "severe_headache",         "tier": "HIGH", "label_en": "Severe headache",               "label_te": ""},
+    {"id": "R03", "sign": "blurred_vision",          "tier": "HIGH", "label_en": "Blurred vision",                "label_te": ""},
+    {"id": "R04", "sign": "convulsions",             "tier": "HIGH", "label_en": "Convulsions / fits",            "label_te": ""},
+    {"id": "R05", "sign": "reduced_fetal_movement",  "tier": "HIGH", "label_en": "Reduced or absent baby movement", "label_te": ""},
+    {"id": "R06", "sign": "severe_abdominal_pain",   "tier": "HIGH", "label_en": "Severe abdominal pain",         "label_te": ""},
+    {"id": "R07", "sign": "difficulty_breathing",    "tier": "HIGH", "label_en": "Difficulty breathing",          "label_te": ""},
+    {"id": "R08", "sign": "water_breaking",          "tier": "HIGH", "label_en": "Leaking of fluid / water broke","label_te": ""},
+    {"id": "R09", "sign": "fever",                   "tier": "MEDIUM", "label_en": "Fever",                       "label_te": ""},
+    {"id": "R10", "sign": "swelling_face_hands",     "tier": "MEDIUM", "label_en": "Swelling of face or hands",   "label_te": ""}
+  ],
+  "measurement_rules": []
+}

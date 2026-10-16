@@ -1,0 +1,27 @@
+MotherCareAI - Exploratory Feature Importance
+
+Model:
+Random Forest classifier
+
+Feature importance:
+1. BS (blood sugar): 0.349414 (34.94%)
+2. SystolicBP: 0.176474 (17.65%)
+3. Age: 0.162120 (16.21%)
+4. HeartRate: 0.120072 (12.01%)
+5. DiastolicBP: 0.109827 (10.98%)
+6. BodyTemp: 0.082092 (8.21%)
+
+Interpretation:
+These values describe how the trained Random Forest uses
+features in its tree splits.
+
+Limitations:
+- Feature importance does not establish medical causation.
+- Importance is specific to this trained model and dataset.
+- Correlated features can affect importance estimates.
+- These values are not clinical risk weights.
+- The model has not been clinically validated.
+
+Conclusion:
+Feature importance is exploratory and intended for academic
+model interpretation only.

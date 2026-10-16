@@ -1,0 +1,25 @@
+# MotherCareAI — Experimental ML Results Analysis
+
+## Confusion Matrix
+
+| Actual Class | Predicted Low | Predicted Mid | Predicted High |
+|---|---:|---:|---:|
+| Low Risk | 32 | 14 | 1 |
+| Mid Risk | 11 | 7 | 3 |
+| High Risk | 5 | 2 | 16 |
+
+## Results Interpretation
+
+The saved model correctly classified 55 out of 91 evaluated records, corresponding to approximately 60.4% accuracy.
+
+- **Low Risk:** 32 of 47 records were correctly classified.
+- **Mid Risk:** 7 of 21 records were correctly classified. Eleven were predicted as Low Risk.
+- **High Risk:** 16 of 23 records were correctly classified.
+
+The results show that performance varies across classes. Mid Risk classification is a particular weakness in this experiment.
+
+## Limitations
+
+This evaluation does not establish that the test records were independent of the saved model's training data. The results are preliminary and do not demonstrate clinical safety, diagnostic accuracy, or suitability for maternal healthcare decisions.
+
+The model is an academic prototype only and must not be used to determine patient care or referrals.
