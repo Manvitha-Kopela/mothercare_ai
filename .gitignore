@@ -81,3 +81,7 @@ coverage/
 *.sqlite3
 *.db
 backend.zip
+
+# Local ML dataset and generated model
+backend/ml/Maternal Health Risk Data Set.csv
+backend/ml/maternal_risk_model.joblib
